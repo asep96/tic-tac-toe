@@ -1,0 +1,177 @@
+body {
+    background-color: #4C7E80;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.player-input-container {
+    width: 100%;
+}
+
+#player-input-form {
+    width: 75%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+
+.info-input-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.start-game, #restart-button {
+    display: block;
+    position: relative;
+    color: #5F9EA0;
+    background-color: #000000;
+    font-size: 32px;
+    font-weight: bolder;
+    border-radius: 10%;
+    border-color: #000000;
+    height: 150px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+}
+
+input {
+    background: #5F9EA0;
+    border: 1px solid #5F9EA0;
+    height: 40px;
+    width: 225px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.start-game:hover, #restart-button:hover {
+    color: #000000;
+    background-color: #5F9EA0;
+    border: 5px solid black;
+}
+
+#game-board-container {
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.game-button  {
+    color: black;
+    background-color: #5F9EA0;
+    font-size: 5em;
+    font-weight: bolder;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.game-button:hover {
+    background-color: #87b6b8;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    #game-board-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .game-button {
+        border: 2px;
+        font-size: 3em;
+        border-style: solid;
+        border-color: black;
+    }
+
+    #player-input-form {
+        width: 75%;
+        margin: auto;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+}
+
+#a00{
+    
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+#a01{
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-top: 0px;
+}
+
+#a02{
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+#a10{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-left: 0px;
+}
+
+#a11{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#a12{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-right: 0px;
+}
+
+#a20{
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+#a21{
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-bottom: 0px;
+}
+
+#a22 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-right: 0px;
+    border-bottom: 0px;
+}

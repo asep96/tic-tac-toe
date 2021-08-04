@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <div class=main-container>
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="player-input-container">
+            <form id="player-input-form">
+                <div class="info-input-div">
+                    <label for="player-one-name-label">Player One's Name:</label>
+                    <input type="text" id="player-one-name" name="player-one-name"><br>
+                    <label for="player-one-marker-label">Player One's Marker:</label>
+                    <input type="text" id="player-one-marker" name="player-one-marker"><br>
+                    <label for="player-Two-name-label">Player Two's Name:</label>
+                    <input type="text" id="player-two-name" name="player-two-name"><br>
+                    <label for="player-Two-name-label">Player Two's Marker:</label>
+                    <input type="text" id="player-two-marker" name="player-two-marker"><br>
+                </div>
+                <button type=button class=start-game onClick="gameLogicController.initializeGame()">START GAME</button>
+            </form>
+        </div>
+        <div class=game-board id=game-board>
+            <h1 id="turn-display"></h1>
+        </div>
+    </div>
+
+
+
+<script src="ticTacToe.js"></script>
+</body>
+</html>
